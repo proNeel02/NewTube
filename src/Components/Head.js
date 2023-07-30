@@ -8,11 +8,13 @@ const Head = () => {
   };
 
   return (
-    <div className="grid grid-flow-col p-2">
+    <div className="grid grid-flow-col p-2 fixed left-2 right-0 top-0 z-50 bg-white">
       <div className="flex col-span-1 items-center">
-        <div className="w-10 h-10 rounded-full hover:bg-gray-200 flex justify-center items-center cursor-pointer">
+        <div
+          className="w-10 h-10 rounded-full hover:bg-gray-200 flex justify-center items-center cursor-pointer"
+          onClick={() => toggleMenuHandler()}
+        >
           <img
-            onClick={() => toggleMenuHandler()}
             className="h-5"
             alt="menu"
             src={"./images/hamburger_2516745.png"}

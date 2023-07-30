@@ -15,7 +15,7 @@ const ButtonList = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center">
+    <div className="flex justify-center items-center flex-wrap mt-12 p-5">
       {list?.map((title) => {
         return <Button key={title} title={title} />;
       })}
