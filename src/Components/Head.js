@@ -11,6 +11,10 @@ const Head = () => {
     <div className="grid grid-flow-col p-2 fixed left-2 right-0 top-0 z-50 bg-white">
       <div className="flex col-span-1 items-center">
         <div
+          type="button"
+          data-drawer-target="drawer-example"
+          data-drawer-show="drawer-example"
+          aria-controls="drawer-example"
           className="w-10 h-10 rounded-full hover:bg-gray-200 flex justify-center items-center cursor-pointer"
           onClick={() => toggleMenuHandler()}
         >
@@ -34,7 +38,7 @@ const Head = () => {
         <input
           className="h-full border border-gray-400 p-2 rounded-l-full w-4/6 px-5"
           type="text"
-          placeholder="Search"
+          placeholder="Search (App is Under build)"
         />
         <button className="border border-gray-400 p-2 rounded-r-full">
           <img
